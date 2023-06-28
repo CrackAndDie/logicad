@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:logicad.Views"
+      xmlns:behaviors="clr-namespace:logicad.Behaviors"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPageView">
@@ -18,12 +19,22 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto"
                       x:Name="scrollViewer"
-                      CanContentScroll="True"
+                      CanContentScroll="False"
+                      MouseRightButtonDown="CanvasMouseRightButtonDown"
+                      MouseRightButtonUp="CanvasMouseRightButtonUp"
+                      MouseMove="CanvasMouseMove"
                       Style="{StaticResource FavsScrollViewer}">
             <Canvas x:Name="canvas"
                     Width="3300"
                     Height="3300"
-                    AllowDrop="True">
+                    AllowDrop="True"
+                    behaviors:ZoomBehavior.IsEnabled="True"
+                    behaviors:ZoomBehavior.ZoomFactor="0.1"
+                    behaviors:ZoomBehavior.CurrentZoomTB="{Binding ElementName=CanvasScaleTB}"
+                    behaviors:ZoomBehavior.ScrollViewer="{Binding ElementName=scrollViewer}">
+                <Canvas.RenderTransform>
+                    <MatrixTransform />
+                </Canvas.RenderTransform>
                 <Canvas.Background>
                     <VisualBrush TileMode="Tile"
                                  Stretch="Uniform"
@@ -45,7 +56,8 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top">
             <TextBlock d:Text="0:0"
-                       Text="{Binding MousePosition}"
+                       Text="0:0"
+                       x:Name="MousePosTB"
                        Style="{StaticResource DefaultTextBlock}"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center" />
@@ -60,6 +72,13 @@
                     <VisualBrush Visual="{Binding ElementName=canvas}" />
                 </Border.Background>
             </Border>
+
+            <TextBlock d:Text="100%"
+                       Text="100%"
+                       x:Name="CanvasScaleTB"
+                       Style="{StaticResource DefaultTextBlock}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
         </StackPanel>
     </Grid>
 </Page>

@@ -94,6 +94,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Behaviors\ZoomBehavior.cs" />
     <Compile Include="Modules\MainModule.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\LogicPageView.xaml.cs">
@@ -172,7 +173,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\logicad.Model\logicad.Model.csproj">
+      <Project>{BE38FEA7-B046-437B-90E7-6C8C5FB7CCE1}</Project>
+      <Name>logicad.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\test_logo.jpg" />
   </ItemGroup>
