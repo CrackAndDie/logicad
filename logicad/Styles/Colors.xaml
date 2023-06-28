@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="PrimaryGrayBrush"
+                     Color="{DynamicResource PrimaryGrayColor}" />
+    <SolidColorBrush x:Key="PrimaryLightGrayBrush"
+                     Color="{DynamicResource PrimaryLightGrayColor}" />
+    <SolidColorBrush x:Key="LightGrayBrush"
+                     Color="{DynamicResource LightGrayColor}" />
+    <SolidColorBrush x:Key="DarkGrayBrush"
+                     Color="{DynamicResource DarkGrayColor}" />
+
+    <SolidColorBrush x:Key="AdditionalBrush"
+                     Color="{DynamicResource AdditionalColor}" />
+    <SolidColorBrush x:Key="AdditionalLightBrush"
+                     Color="{DynamicResource AdditionalLightColor}" />
+    <SolidColorBrush x:Key="AdditionalDarkBrush"
+                     Color="{DynamicResource AdditionalDarkColor}" />
+
+    <Color x:Key="PrimaryGrayColor">#3f444f</Color>
+    <Color x:Key="PrimaryLightGrayColor">#5f664f</Color>
+    <Color x:Key="LightGrayColor">#888888</Color>
+    <Color x:Key="DarkGrayColor">#2f343f</Color>
+
+    <Color x:Key="AdditionalColor">#5599e0</Color>
+    <Color x:Key="AdditionalLightColor">#81aad6</Color>
+    <Color x:Key="AdditionalDarkColor">#2e66a3</Color>
+</ResourceDictionary>
