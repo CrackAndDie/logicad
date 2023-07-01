@@ -9,6 +9,7 @@
         xmlns:local="clr-namespace:logicad"
         xmlns:viewModels="clr-namespace:logicad.ViewModels"
         prism:ViewModelLocator.AutoWireViewModel="True"
+        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
         mc:Ignorable="d"
         WindowState="{Binding CurrentWindowState, Mode=TwoWay}"
         Title="MainWindow"

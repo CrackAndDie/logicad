@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logicad", "logicad\logicad.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logicad.Model", "logicad.Model\logicad.Model.csproj", "{BE38FEA7-B046-437B-90E7-6C8C5FB7CCE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeGraph", "NodeGraph\NodeGraph.csproj", "{2E2AB11C-015D-40F2-97F6-0E0768FC7069}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BE38FEA7-B046-437B-90E7-6C8C5FB7CCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE38FEA7-B046-437B-90E7-6C8C5FB7CCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE38FEA7-B046-437B-90E7-6C8C5FB7CCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2AB11C-015D-40F2-97F6-0E0768FC7069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2AB11C-015D-40F2-97F6-0E0768FC7069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2AB11C-015D-40F2-97F6-0E0768FC7069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2AB11C-015D-40F2-97F6-0E0768FC7069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

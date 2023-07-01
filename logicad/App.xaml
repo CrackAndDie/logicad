@@ -7,11 +7,16 @@
     <prism:PrismApplication.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Dark"
+                                             PrimaryColor="DeepOrange"
+                                             SecondaryColor="Blue" />
                 <ResourceDictionary Source="pack://application:,,,/Styles/Colors.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Styles/ScrollViewer.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Styles/TextBlock.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Styles/Border.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/NodeGraph;component/ResourceDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/NodeGraph.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
